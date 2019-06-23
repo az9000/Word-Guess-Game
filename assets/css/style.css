@@ -1,0 +1,58 @@
+body {
+    background: black;
+    background-image: url('/assets/images/American_football_17-512.png');
+}
+
+#banner {
+    font-family: 'oldnewspapertypesregular',Geneva, Verdana, sans-serif; 
+    color: white; 
+    text-align: center; 
+    font-size: 100px;
+}
+
+
+#description {
+    font-family: 'oldnewspapertypesregular',Geneva, Verdana, sans-serif; 
+    color: white; 
+    text-align: center; 
+    font-size: 32px
+}
+
+#left-column {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    background: black; 
+    margin: 0 auto; 
+    height: 65vh; 
+    position: absolute; 
+    top: 25%; 
+    left: 25%;    
+    min-width: 20vw; 
+    border: 5px dotted yellow; 
+    color: white; 
+    text-align: center
+}
+
+#word {
+    font-family: 'oldnewspapertypesregular',Geneva, Verdana, sans-serif; 
+    color: white; 
+    text-align: center; 
+    font-size: 30px
+}
+
+#right-column {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    background: black; 
+    margin: 0 auto; 
+    height: 65vh; 
+    position: absolute; 
+    top: 25%; 
+    left: 51%; 
+    min-width: 20vw; 
+    border: 5px dotted yellow; 
+    color: white; 
+    text-align: center
+}
+
+.pad {
+    padding: 5% 1% 5% 1%;;
+}
