@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="assets/fonts/stylesheet.css" type="text/css" />
+        
+        <!-- javascript -->
+        <script src="assets/javascript/game.js"></script>
+
+        <title>Greatest Word Guess Game</title>
+    </head>
+    <body>
+
+        <h1 id="banner">Football Guess Words</h1>
+        <h3 id="description">Test your knowledge of football vocabulary</h3>
+        <div id="left-column">
+            <div class="pad"><img id="status-image" src="" style="width:20vw;height:40vh;" /></div>                        
+            <div>
+                <p id="looking-for-word">Looking for:</p>
+                <p  id="word"></p> 
+            </div>
+        </div>
+        
+        <div id="right-column">
+            <div class="pad" ><p>Press any key to start</p></div>
+            <div class="pad" id="game-status"><p></p></div>
+            <div class="pad" ><p>Wins</p></div>
+            <div class="pad" id="num-of-wins"><p>0</p></div>
+            <div class="pad" ><p>Current Word</p></div>
+            <div class="pad" style="font-size: 24px" id="current-word"><p>--------</p></div>
+            <div class="pad" ><p>Number of guesses remaining</p></div>
+            <div class="pad" id="guesses"><p>6</p></div>
+            <div class="pad" ><p>Letters already guessed</p></div>
+            <div class="pad" id="letters-guessed"><p></p></div>
+        </div>
+        
+        
+
+    </body>
+</html>
