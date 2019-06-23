@@ -149,13 +149,25 @@ var game = {
     },
 
     /**
-     * This is from Google Fu
-     * @param {*} string  : original string
+     * This is from Google Fu (https://gist.github.com/efenacigiray/9367920)
+     * @param {*} text  : original string
      * @param {*} index   : index of letter to replace
-     * @param {*} replace : replacement letter
+     * @param {*} ch : replacement letter
      */
-    replaceAt: function (string, index, replace) {    
-        return string.substring(0, index) + replace + string.substring(index + 1);
+    replaceAt: function (text, index, ch) {
+        // text.substr(0, index) = returns left characters up to index
+        // ch = character to use
+        // text.substring(index + 1) returns rightmost characters in text
+        // Example: text = 'hello'
+        // replace 'l' with 'x' (index = 1)
+        // text.substr(0, 1) = 'he'
+        // text.substring(2) = 'lo'
+        // 'he' + 'x' + 'lo' => 'hexlo'
+        // Next round index = 2:
+        // text.substr(0, 2) = 'hex'
+        // text.substring(3) = 'o'
+        // 'hex' + 'x' + 'o' => 'hexxo'
+        return text.substring(0, index) + ch + text.substring(index + 1);
     }
     
 
