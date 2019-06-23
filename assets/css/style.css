@@ -29,7 +29,8 @@ body {
     min-width: 20vw; 
     border: 5px dotted yellow; 
     color: white; 
-    text-align: center
+    text-align: center;
+    display: inline-block;
 }
 
 #word {
@@ -50,7 +51,8 @@ body {
     min-width: 20vw; 
     border: 5px dotted yellow; 
     color: white; 
-    text-align: center
+    text-align: center;
+    display: inline-block;
 }
 
 .pad {
