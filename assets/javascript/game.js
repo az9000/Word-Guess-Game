@@ -64,6 +64,7 @@ var game = {
         this.attempts++;
         if ((this.maxAttempts - game.attempts) === 0) {
             this.started = false;
+            utility.playSound('assets/sounds/boo.mp3');
             document.getElementById('looking-for-word').style.display = 'block';
             document.getElementById('word').style.display = 'block';
             document.getElementById('word').innerHTML = this.word.toUpperCase();
@@ -81,6 +82,7 @@ var game = {
 
     winner: function() {
         this.updateScore();
+        utility.playSound('assets/sounds/cheer.mp3');
         document.getElementById('num-of-wins').textContent = this.score + '/' + this.gamesPlayed;
         document.getElementById("status-image").style.display = "block";
         document.getElementById("status-image").src = "/assets/images/good-job.gif";

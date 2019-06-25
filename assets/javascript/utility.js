@@ -1,6 +1,7 @@
 var utility = {
 
     alphabet : 'abcdefghijklmnopqrstuvwxyz',
+    audio: HTMLAudioElement,
 
     isAlphabet : function(key) {
         if (this.alphabet.indexOf(key.toLowerCase()) >= 0) {
@@ -33,5 +34,14 @@ var utility = {
 
     getElementText: function(id) {
         return document.getElementById(id).textContent;
+    },
+
+    playSound: function(src) {
+        this.audio = new Audio(src);
+        this.audio.play();
+    },
+
+    stopSound: function() {
+        this.audio.stopSound();
     }
 }
