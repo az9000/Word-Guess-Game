@@ -1,6 +1,7 @@
 body {
     background: black;
     background-image: url('/assets/images/American_football_17-512.png');
+    min-height: 600px;
 }
 
 #banner {

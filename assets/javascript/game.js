@@ -1,3 +1,5 @@
+var ready = true;
+
 var game = { 
     score: 0,
     attempts: 0,
@@ -14,6 +16,9 @@ var game = {
      * Start a new game and init
      */
     newGame: function() {
+        if (!ready) {
+            return;
+        }
         this.started = true;
         this.attempts = 0;        
         this.updateGuesses(this.maxAttempts);
@@ -64,6 +69,11 @@ var game = {
         this.attempts++;
         if ((this.maxAttempts - game.attempts) === 0) {
             this.started = false;
+            ready = false;
+            setTimeout(function() {
+                ready = true;
+            }, 4000);
+            utility.playSound('/assets/sounds/sad.mp3');
             document.getElementById('looking-for-word').style.display = 'block';
             document.getElementById('word').style.display = 'block';
             document.getElementById('word').innerHTML = this.word.toUpperCase();
@@ -81,6 +91,11 @@ var game = {
 
     winner: function() {
         this.updateScore();
+        ready = false;
+        setTimeout(function() {
+           ready = true;
+        }, 4000);
+        utility.playSound('/assets/sounds/cheer.mp3');
         document.getElementById('num-of-wins').textContent = this.score + '/' + this.gamesPlayed;
         document.getElementById("status-image").style.display = "block";
         document.getElementById("status-image").src = "/assets/images/good-job.gif";

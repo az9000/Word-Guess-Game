@@ -33,5 +33,14 @@ var utility = {
 
     getElementText: function(id) {
         return document.getElementById(id).textContent;
+    },
+
+    playSound: function(src) {
+        var audio = new Audio(src);
+        audio.play();
     }
+}
+
+window.onresize = function(event) {
+    console.log(window.innerWidth + 'x' + window.innerHeight);
 }
