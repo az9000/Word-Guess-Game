@@ -91,11 +91,15 @@ var game = {
 
     winner: function() {
         this.updateScore();
+<<<<<<< HEAD
         ready = false;
         setTimeout(function() {
            ready = true;
         }, 4000);
         utility.playSound('/assets/sounds/cheer.mp3');
+=======
+        utility.playSound('assets/sounds/cheer.mp3');
+>>>>>>> 0989e067772bdb83530ea933fe3c7249aa7231d0
         document.getElementById('num-of-wins').textContent = this.score + '/' + this.gamesPlayed;
         document.getElementById("status-image").style.display = "block";
         document.getElementById("status-image").src = "/assets/images/good-job.gif";

@@ -1,6 +1,7 @@
 var utility = {
 
     alphabet : 'abcdefghijklmnopqrstuvwxyz',
+    audio: HTMLAudioElement,
 
     isAlphabet : function(key) {
         if (this.alphabet.indexOf(key.toLowerCase()) >= 0) {
