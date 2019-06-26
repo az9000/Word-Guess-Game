@@ -42,6 +42,6 @@ var utility = {
     }
 }
 
-window.onresize = function(event) {
-    console.log(window.innerWidth + 'x' + window.innerHeight);
-}
+// window.onresize = function(event) {
+//     console.log(window.innerWidth + 'x' + window.innerHeight);
+// }
