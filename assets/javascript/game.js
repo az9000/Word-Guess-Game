@@ -73,12 +73,12 @@ var game = {
             setTimeout(function() {
                 ready = true;
             }, 4000);
-            utility.playSound('assets/sounds/sad.mp3');
+            utility.playSound('../sounds/sad.mp3');
             document.getElementById('looking-for-word').style.display = 'block';
             document.getElementById('word').style.display = 'block';
             document.getElementById('word').innerHTML = this.word.toUpperCase();
             document.getElementById("status-image").style.display = "block";
-            document.getElementById("status-image").src = "assets/images/silent_tears.gif";
+            document.getElementById("status-image").src = "../images/silent_tears.gif";
             this.updateGameStatus('Finished');
             this.updateGuesses(0);
             return;
@@ -95,10 +95,10 @@ var game = {
         setTimeout(function() {
            ready = true;
         }, 4000);
-        utility.playSound('assets/sounds/cheer.mp3');
+        utility.playSound('../sounds/cheer.mp3');
         document.getElementById('num-of-wins').textContent = this.score + '/' + this.gamesPlayed;
         document.getElementById("status-image").style.display = "block";
-        document.getElementById("status-image").src = "assets/images/good-job.gif";
+        document.getElementById("status-image").src = "../images/good-job.gif";
         this.updateGameStatus('Finished');
         this.started = false;
         this.attempts = 0;
