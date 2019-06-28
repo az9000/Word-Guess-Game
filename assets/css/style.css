@@ -23,7 +23,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     background: black; 
     margin: 0 auto; 
-    height: 65vh; 
+    min-height: 65vh; 
     position: absolute; 
     top: 25%; 
     left: 25%;    
@@ -45,7 +45,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     background: black; 
     margin: 0 auto; 
-    height: 65vh; 
+    min-height: 65vh; 
     position: absolute; 
     top: 25%; 
     left: 51%; 
@@ -58,4 +58,44 @@ body {
 
 .pad {
     padding: 5% 1% 5% 1%;;
+}
+
+
+@media screen and (max-width: 1050px) {
+    #banner {
+      font-size: 90px;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+    #banner {
+      font-size: 80px;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+    #banner {
+      font-size: 70px;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    #banner {
+      font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #banner {
+      font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #banner {
+      font-size: 40px;
+    }
 }
